@@ -1,0 +1,51 @@
+country_name,census_year,indicator_year,large_farm_area_percent,undernourishment_percent
+Australia,2015,2021,99.78,0.0
+South Africa,2017,2021,99.01,8.1
+Iceland,2010,2021,98.64,0.0
+Russian Federation,2016,2021,98.40,0.0
+Canada,2016,2021,94.31,0.0
+Argentina,2018,2021,93.66,3.2
+Uruguay,2011,2021,93.12,0.0
+Kazakhstan,2006,2021,91.48,0.0
+New Zealand,2017,2021,91.04,0.0
+Chile,2006,2021,88.84,0.0
+Slovakia,2020,2021,88.58,3.6
+Czechia,2020,2021,86.45,0.0
+Colombia,2014,2021,85.93,4.2
+United States of America,2017,2021,83.89,0.0
+Estonia,2020,2021,80.05,0.0
+Paraguay,2008,2021,77.92,4.5
+Peru,2012,2021,77.02,7.0
+Venezuela (Bolivarian Republic of),2008,2021,75.46,17.6
+Denmark,2020,2021,75.27,0.0
+Bulgaria,2020,2021,75.08,0.0
+United Kingdom of Great Britain and Northern Ireland,2010,2021,73.93,0.0
+Brazil,2017,2021,69.56,3.9
+Barbados,1989,2021,69.27,3.5
+Saudi Arabia,2015,2021,68.31,3.0
+France,2020,2021,67.80,0.0
+Hungary,2020,2021,64.96,0.0
+Bolivia (Plurinational State of),2013,2021,64.18,23.0
+Latvia,2020,2021,63.81,0.0
+Luxembourg,2020,2021,63.21,0.0
+Sweden,2020,2021,62.80,0.0
+Germany,2020,2021,61.74,0.0
+Costa Rica,2014,2021,60.10,0.0
+Republic of Moldova,2011,2021,58.36,0.0
+Portugal,2019,2021,58.27,0.0
+Spain,2020,2021,57.83,0.0
+Lithuania,2020,2021,54.94,0.0
+Romania,2020,2021,47.83,0.0
+Nicaragua,2011,2021,46.91,19.6
+Mexico,2007,2021,44.47,3.1
+Finland,2020,2021,43.27,0.0
+Panama,2011,2021,42.73,5.6
+Ecuador,1999,2021,42.57,13.9
+Montenegro,2010,2021,40.17,0.0
+Trinidad and Tobago,2004,2021,39.87,12.6
+Jamaica,2007,2021,39.77,7.3
+Fiji,2020,2021,36.73,7.8
+Croatia,2020,2021,30.21,0.0
+Jordan,2017,2021,30.12,17.9
+Belgium,2020,2021,29.46,0.0
+Italy,2020,2021,27.14,0.0
