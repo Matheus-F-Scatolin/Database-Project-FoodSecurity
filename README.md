@@ -1,6 +1,13 @@
 # MC536: Database Project - Agricultural Production, Land Use, and Food Security Analysis
 
+## Project Overview
+This project was developed by
+<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger)
+<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin)
+<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton)
+
 This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
+
 ## Database Schema Overview
 
 The core of this project is the relational database designed to integrate the different datasets. Below are visualizations of the conceptual and relational models:
@@ -176,8 +183,10 @@ Postgres-Database-Project-FoodSecurity/
 1.  **Start Jupyter:** Navigate to the repository directory in your terminal and launch Jupyter Lab or Notebook:
     ```bash
     jupyter lab
-    # or
-    # jupyter notebook
+    ```
+    or
+    ```
+    jupyter notebook
     ```
 2.  **Open Notebook:** Open the [`database_creation_and_queries.ipynb`](./database_creation_and_queries.ipynb) notebook in Jupyter.
 3.  **Execute Cells:** Run the cells in the notebook sequentially.
@@ -197,7 +206,7 @@ The core analysis is performed through SQL queries embedded within the [`databas
 1.  Land Concentration vs. Undernourishment Prevalence.
 2.  Staple Crop Production vs. Dietary Energy Adequacy.
 3.  Animal Product Production vs. Animal Protein Supply.
-4.  Time-Series Trend Analysis (Example: Soya Production vs. Protein Supply in Brazil).
+4.  Time-Series Trend Analysis (Example: Soya Production vs. Protein Supply in the USA).
 5.  Detailed Land Distribution Profile for a specific Country/Census.
 
 The SQL code for each query is documented within the notebook.
