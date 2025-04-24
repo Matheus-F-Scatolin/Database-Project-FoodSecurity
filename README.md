@@ -7,7 +7,7 @@ The core of this project is the relational database designed to integrate the di
 
 **Figure 1: Conceptual Model (ER Diagram)**
 <p align="center">
-  <img src="./models/Conceptual_Model.png" alt="Conceptual Database Model ERD" width="700"/>
+  <img src="./models/Conceptual_Model_NoBG.png" alt="Conceptual Database Model ERD" width="700"/>
 </p>
 
 **Figure 2: Relational (Logical) Model**
