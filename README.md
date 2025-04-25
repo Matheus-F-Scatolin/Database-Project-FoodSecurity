@@ -2,9 +2,9 @@
 
 ## Project Overview
 This project was developed by
-<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger)
-<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin)
-<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton)
+<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger) (247314)
+<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin) (252099)
+<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton) (214381)
 
 This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
 
