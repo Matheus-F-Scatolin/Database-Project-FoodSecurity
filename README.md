@@ -19,7 +19,7 @@ The core of this project is the relational database designed to integrate the di
 
 **Figure 2: Relational (Logical) Model**
 <p align="center">
-  <img src="./models/Relational_Model.png" alt="Relational Database Model" width="700"/>
+  <img src="./models/Relational_Model_Image.png" alt="Relational Database Model" width="700"/>
 </p>
 
 *(The detailed Physical Model SQL script can be found [here](./models/Physical_model.sql)).*
