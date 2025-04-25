@@ -83,7 +83,7 @@ The original datasets were preprocessed (details in [`preprocessing.ipynb`](./pr
 The database schema was designed through conceptual and logical modeling stages, resulting in the physical implementation in PostgreSQL.
 
 *   **Conceptual Model:** [`/models/Conceptual_Model.png`](./models/Conceptual_Model.png)
-*   **Relational (Logical) Model:** [`/models/Relational_Model.png`](./models/Relational_Model.png)
+*   **Relational (Logical) Model:** [`/models/Relational_Model_Image.png`](./models/Relational_Model_Image.png)
 *   **Physical Model (SQL DDL):** [`/models/Physical_model.sql`](./models/Physical_model.sql)
 *   **pgAdmin ERD File:** [`/models/project.pgerd`](./models/project.pgerd)
 
