@@ -1,18 +1,25 @@
 # MC536: Database Project - Agricultural Production, Land Use, and Food Security Analysis
 
+## Project Overview
+This project was developed by
+<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger)  (247314)
+<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin)  (252099)
+<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton)  (214381)
+
 This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
+
 ## Database Schema Overview
 
 The core of this project is the relational database designed to integrate the different datasets. Below are visualizations of the conceptual and relational models:
 
 **Figure 1: Conceptual Model (ER Diagram)**
 <p align="center">
-  <img src="./models/Conceptual_Model.png" alt="Conceptual Database Model ERD" width="700"/>
+  <img src="./models/Conceptual_Model_NoBG.png" alt="Conceptual Database Model ERD" width="700"/>
 </p>
 
 **Figure 2: Relational (Logical) Model**
 <p align="center">
-  <img src="./models/Relational_Model.png" alt="Relational Database Model" width="700"/>
+  <img src="./models/Relational_Model_Image.png" alt="Relational Database Model" width="700"/>
 </p>
 
 *(The detailed Physical Model SQL script can be found [here](./models/Physical_model.sql)).*
@@ -76,7 +83,7 @@ The original datasets were preprocessed (details in [`preprocessing.ipynb`](./pr
 The database schema was designed through conceptual and logical modeling stages, resulting in the physical implementation in PostgreSQL.
 
 *   **Conceptual Model:** [`/models/Conceptual_Model.png`](./models/Conceptual_Model.png)
-*   **Relational (Logical) Model:** [`/models/Relational_Model.png`](./models/Relational_Model.png)
+*   **Relational (Logical) Model:** [`/models/Relational_Model_Image.png`](./models/Relational_Model_Image.png)
 *   **Physical Model (SQL DDL):** [`/models/Physical_model.sql`](./models/Physical_model.sql)
 *   **pgAdmin ERD File:** [`/models/project.pgerd`](./models/project.pgerd)
 
@@ -176,8 +183,10 @@ Postgres-Database-Project-FoodSecurity/
 1.  **Start Jupyter:** Navigate to the repository directory in your terminal and launch Jupyter Lab or Notebook:
     ```bash
     jupyter lab
-    # or
-    # jupyter notebook
+    ```
+    or
+    ```
+    jupyter notebook
     ```
 2.  **Open Notebook:** Open the [`database_creation_and_queries.ipynb`](./database_creation_and_queries.ipynb) notebook in Jupyter.
 3.  **Execute Cells:** Run the cells in the notebook sequentially.
@@ -197,7 +206,7 @@ The core analysis is performed through SQL queries embedded within the [`databas
 1.  Land Concentration vs. Undernourishment Prevalence.
 2.  Staple Crop Production vs. Dietary Energy Adequacy.
 3.  Animal Product Production vs. Animal Protein Supply.
-4.  Time-Series Trend Analysis (Example: Soya Production vs. Protein Supply in Brazil).
+4.  Time-Series Trend Analysis (Example: Soya Production vs. Protein Supply in the USA).
 5.  Detailed Land Distribution Profile for a specific Country/Census.
 
 The SQL code for each query is documented within the notebook.
