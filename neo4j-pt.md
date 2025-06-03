@@ -13,22 +13,22 @@ Cypher é uma linguagem declarativa específica para grafos, projetada para ser 
 <img src="./images/query_example.png" size=300></img>
 
 As consultas Cypher são transformadas em planos de execução. O mecanismo começa com nós "âncora" (encontrados via índices ou rótulos) e percorre os relacionamentos seguindo os ponteiros. Essa abordagem é altamente eficiente para travessias e correspondência de padrões.
-O motor otimizado para travessias tornam o Neo4j ideal para as consultas descritas no cenário, especialmente as que envolvem múltiplos níveis de conexão.
+O motor otimizado para travessias torna o Neo4j ideal para as consultas descritas no cenário, especialmente as que envolvem múltiplos níveis de conexão.
 
 ## Processamento e Controle de Transações:
 
 Transações podem ser explícitas (`BEGIN`, `COMMIT`, `ROLLBACK`) ou implícitas (uma única consulta autocomitada).
-Suporte total a ACID garante as regras de consistência fortes e integridade relacional, essenciais para aplicações que lidam com dados complexamente relacionados.
+O Neo4j fornece suporte total a ACID, o que garante regras de consistência fortes e integridade relacional, essenciais para aplicações que lidam com dados complexamente relacionados.
 
 ## Mecanismos de Recuperação:
 
 - WAL (Write-Ahead Log): Todas as alterações são primeiro escritas no log antes de serem aplicadas ao banco.
 - Checkpoints: Dados são periodicamente gravados no disco como pontos consistentes de recuperação.
-- Backup e Restauração: Ferramentas (neo4j-admin backup/restore) permitem backups completos ou incrementais, úteis em falhas graves.
+- Backup e Restauração: Ferramentas (por exemplo, neo4j-admin backup/restore) permitem backups completos ou incrementais, úteis em falhas graves.
 
 ## Mecanismos de Segurança:
 
-- Autenticação: Com nome de usuário e senha. Integração com LDAP/AD na edição Enterprise.
+- Autenticação: Com nome de usuário e senha.
 - Autorização (RBAC): Modelo detalhado de permissões por papéis, controlando leitura, escrita, travessias, modificações de esquema etc.
 - Criptografia: Suporte a TLS/SSL e criptografia em repouso.
-- Auditoria: Registro de eventos sensíveis (Enterprise).
+- Auditoria: Registro de eventos sensíveis.
