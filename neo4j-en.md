@@ -10,7 +10,7 @@ This storage model is highly beneficial for queries involving "multiple levels o
 
 ## Query Language and Processing:
 
-Cypher is a declarative graph-specific language designed to be intuitive for expressing relationship patterns. It uses a visual syntax with nodes () and relationships -->, [:TYPE]->. For example:
+Cypher is a declarative graph-specific language designed to be intuitive for expressing relationship patterns. It uses a visual syntax with nodes `()` and relationships `-->`, `[:TYPE]->`. For example:
 <img src="./images/query_example.png" size=300></img>
 
 Cypher queries are transformed into execution plans. The engine begins with "anchor" nodes (found via indexes or labels) and traverses relationships by following pointers. This approach is highly efficient for traversals and pattern matching.
