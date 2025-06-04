@@ -1,0 +1,14 @@
+country_name,outcome_group,insecurity_prevalence,latest_census_year,pct_area_small_farms,pct_area_medium_farms,pct_area_large_farms
+Armenia,Best Outcome (Lowest Insecurity),0.0,2014,65.8,11.5,4.8
+Indonesia,Best Outcome (Lowest Insecurity),0.0,1993,88.2,3.4,0.0
+Italy,Best Outcome (Lowest Insecurity),0.0,2020,10.7,34.6,27.1
+Russian Federation,Best Outcome (Lowest Insecurity),0.0,2016,0.0,0.6,98.4
+Kazakhstan,Best Outcome (Lowest Insecurity),0.6,2006,0.4,3.4,91.5
+Luxembourg,Best Outcome (Lowest Insecurity),0.6,2020,0.4,8.7,63.2
+Azerbaijan,Best Outcome (Lowest Insecurity),0.7,2015,48.0,10.6,26.3
+United States of America,Best Outcome (Lowest Insecurity),0.8,2017,0.4,6.7,83.9
+Poland,Best Outcome (Lowest Insecurity),0.9,2020,11.7,39.5,23.1
+Lesotho,Worst Outcome (Highest Insecurity),32.8,2009,100.0,0.0,0.0
+Congo,Worst Outcome (Highest Insecurity),38.3,2014,62.4,24.9,0.0
+Democratic Republic of the Congo,Worst Outcome (Highest Insecurity),41.7,1990,100.0,0.0,0.0
+Haiti,Worst Outcome (Highest Insecurity),42.4,2008,93.6,1.8,0.0

@@ -1,0 +1,26 @@
+country,targetCrop,avg_crop_prod_early_period,avg_crop_prod_recent_period,crop_prod_increase_factor,avg_protein_supply_early_period,avg_protein_supply_recent_period,protein_supply_change
+Togo,Soya beans,210.0,68371.0,325.58,50.44,54.8,4.36
+Greece,Soya beans,32.0,6942.0,216.19,116.08,106.9,-9.18
+Germany,Soya beans,720.0,55760.0,77.44,97.62,110.58,12.96
+Slovenia,Soya beans,126.0,5872.0,46.75,99.38,104.22,4.84
+Ethiopia,Soya beans,2607.0,106467.0,40.85,54.1,78.1,24.0
+Benin,Soya beans,4984.0,188110.0,37.74,57.46,67.96,10.5
+Poland,Soya beans,345.0,12195.0,35.4,99.8,113.54,13.74
+Ukraine,Soya beans,171622.0,4083960.0,23.8,85.42,93.66,8.24
+Angola,Soya beans,1200.0,27838.0,23.2,,,
+Uruguay,Soya beans,136680.0,2538200.0,18.57,83.38,95.26,11.88
+Zambia,Soya beans,18328.0,285868.0,15.6,47.46,50.36,2.9
+United Republic of Tanzania,Soya beans,919.0,14110.0,15.35,53.88,57.5,3.62
+Belize,Soya beans,774.0,9433.0,12.19,,,
+"China, Taiwan Province of",Soya beans,322.0,3928.0,12.18,89.94,96.04,6.1
+Bulgaria,Soya beans,1664.0,18176.0,10.92,80.76,88.3,7.54
+Central Asia,Soya beans,24743.0,256342.0,10.36,,,
+Kazakhstan,Soya beans,24455.0,247286.0,10.11,89.7,107.18,17.48
+Eastern Europe,Soya beans,833968.0,8374100.0,10.04,,,
+Russian Federation,Soya beans,412126.0,3571876.0,8.67,90.04,110.74,20.7
+Slovakia,Soya beans,11187.0,96726.0,8.65,72.78,76.72,3.94
+Kyrgyzstan,Soya beans,277.0,2303.0,8.33,85.3,88.4,3.1
+Burkina Faso,Soya beans,3596.0,29479.0,8.2,72.92,81.94,9.02
+Cameroon,Soya beans,6225.0,50932.0,8.18,57.96,73.2,15.24
+Small Island Developing States,Soya beans,1354.0,9381.0,6.93,,,
+South Africa,Soya beans,183361.0,1167669.0,6.37,76.8,79.56,2.76
