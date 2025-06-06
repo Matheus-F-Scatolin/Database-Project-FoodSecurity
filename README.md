@@ -6,7 +6,7 @@ This project was developed by
 <br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin)  (252099)
 <br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton)  (214381)
 
-This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
+This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL (and Neo4j) database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
 
 ## Database Schema Overview
 
@@ -23,6 +23,13 @@ The core of this project is the relational database designed to integrate the di
 </p>
 
 *(The detailed Physical Model SQL script can be found [here](./models/PostgreSQL_models/Physical_model.sql)).*
+
+As a second step, the group developed a Neo4j database, with some changes to adapt the schema.
+
+**Figure 3: Logical Model for the Neo4j Database**
+<p align="center">
+  <img src="./models/Neo4j_models/Logical_Model.png" alt="Logical Neo4j Database Model" width="700"/>
+</p>
 
 ---
 
@@ -47,8 +54,8 @@ The core of this project is the relational database designed to integrate the di
 
 ## Project Goals
 
-*   Design a relational database schema (Conceptual, Logical, Physical models) to integrate data from diverse sources.
-*   Implement the database schema in PostgreSQL.
+*   Design a relational (and non-relational) database schema (Conceptual, Logical, Physical models) to integrate data from diverse sources.
+*   Implement the database schema in PostgreSQL and Neo4j.
 *   Preprocess and clean the raw datasets for compatibility with the database structure.
 *   Develop Python scripts using `psycopg2` within a Jupyter Notebook to:
     *   Create database tables.
