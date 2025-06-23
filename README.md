@@ -1,32 +1,38 @@
 # MC536: Database Project - Agricultural Production, Land Use, and Food Security Analysis
 
 ## Project Overview
-This project was developed by
-<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger)  (247314)
-<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin)  (252099)
-<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton)  (214381)
 
-This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL (and Neo4j) database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
+This project was developed by
+<br/>[Lucas G. Bussinger da Silva](https://github.com/Lucas-Bussinger) (247314)
+<br/>[Matheus F. Scatolin](https://github.com/Matheus-F-Scatolin) (252099)
+<br/>[Rafael Setton A. de Carvalho](https://github.com/RafaelSetton) (214381)
+
+This repository contains the coursework for **MC536: Databases - Theory and Practice**. The project involves designing, implementing, and querying a PostgreSQL and a Neo4j database to analyze relationships between global agricultural production, agricultural land distribution (farm sizes), and food security indicators using open-source data.
 
 ## Database Schema Overview
 
 The core of this project is the relational database designed to integrate the different datasets. Below are visualizations of the conceptual and relational models:
 
+### PostgreSQL
+
 **Figure 1: Conceptual Model (ER Diagram)**
+
 <p align="center">
   <img src="./models/PostgreSQL_models/Conceptual_Model_NoBG.png" alt="Conceptual Database Model ERD" width="700"/>
 </p>
 
 **Figure 2: Relational (Logical) Model**
+
 <p align="center">
   <img src="./models/PostgreSQL_models/Relational_Model_Image.png" alt="Relational Database Model" width="700"/>
 </p>
 
-*(The detailed Physical Model SQL script can be found [here](./models/PostgreSQL_models/Physical_model.sql)).*
+_(The detailed Physical Model SQL script can be found [here](./models/PostgreSQL_models/Physical_model.sql))._
 
 As a second step, the group developed a Neo4j database, with some changes to adapt the schema.
 
 **Figure 3: Logical Model for the Neo4j Database**
+
 <p align="center">
   <img src="./models/Neo4j_models/Logical_Model.png" alt="Logical Neo4j Database Model" width="700"/>
 </p>
@@ -54,18 +60,18 @@ As a second step, the group developed a Neo4j database, with some changes to ada
 
 ## Project Goals
 
-*   Design a relational (and non-relational) database schema (Conceptual, Logical, Physical models) to integrate data from diverse sources.
-*   Implement the database schema in PostgreSQL and Neo4j.
-*   Preprocess and clean the raw datasets for compatibility with the database structure.
-*   Develop Python scripts using `psycopg2` within a Jupyter Notebook to:
-    *   Create database tables.
-    *   Load the preprocessed data from CSV files into the PostgreSQL database.
-*   Execute meaningful, non-trivial SQL queries to explore potential correlations and insights regarding:
-    *   Land concentration and food security.
-    *   Staple crop production and dietary energy supply.
-    *   Animal product production and protein supply.
-    *   Trends over time for specific countries/products.
-    *   Detailed land distribution profiles.
+- Design a relational database schema (Conceptual, Logical, Physical models) to integrate data from diverse sources.
+- Implement the database schema in PostgreSQL.
+- Preprocess and clean the raw datasets for compatibility with the database structure.
+- Develop Python scripts using `psycopg2` within a Jupyter Notebook to:
+  - Create database tables.
+  - Load the preprocessed data from CSV files into the PostgreSQL database.
+- Execute meaningful, non-trivial SQL queries to explore potential correlations and insights regarding:
+  - Land concentration and food security.
+  - Staple crop production and dietary energy supply.
+  - Animal product production and protein supply.
+  - Trends over time for specific countries/products.
+  - Detailed land distribution profiles.
 
 ## Datasets
 
@@ -73,50 +79,52 @@ As a second step, the group developed a Neo4j database, with some changes to ada
 
 The raw data was sourced from FAOSTAT (Food and Agriculture Organization of the United Nations Corporate Statistical Database). The original files used for preprocessing are located in the `/datasets` directory:
 
-*   `FAO_Structural_data_from_agricultural_censuses_3-21-2025.csv`: Contains data on farm structures, including size distributions, from various national agricultural censuses.
-*   `FAO_Suite_of_Food_Security_Indicators_3-21-2025.csv`: Provides values for a wide range of food security indicators across countries and years.
-*   `Production_Crops_Livestock_E_All_Data.csv`: Contains data on the production quantities (tons, number of animals) and area harvested for various crops and livestock products globally.
+- `FAO_Structural_data_from_agricultural_censuses_3-21-2025.csv`: Contains data on farm structures, including size distributions, from various national agricultural censuses.
+- `FAO_Suite_of_Food_Security_Indicators_3-21-2025.csv`: Provides values for a wide range of food security indicators across countries and years.
+- `Production_Crops_Livestock_E_All_Data.csv`: Contains data on the production quantities (tons, number of animals) and area harvested for various crops and livestock products globally.
 
 ### Preprocessed Data
 
 The original datasets were preprocessed (details in [`preprocessing.ipynb`](./preprocessing.ipynb)) to fit the designed database schema. The resulting cleaned CSV files, used for loading into the database, are located in the `/preprocessed_datasets` directory:
 
-*   `agricultural_census.csv`: Contains combined census year, country, farm size range, number of properties, and total area data.
-*   `production_crops_livestock.csv`: Contains production year, country, product details, production volume, harvested area, and animal counts.
-*   `suite_of_food_security_indicators.csv`: Contains food security measurement year, country, indicator details, and measurement value.
+- `agricultural_census.csv`: Contains combined census year, country, farm size range, number of properties, and total area data.
+- `production_crops_livestock.csv`: Contains production year, country, product details, production volume, harvested area, and animal counts.
+- `suite_of_food_security_indicators.csv`: Contains food security measurement year, country, indicator details, and measurement value.
 
 ## Database Schema
 
 The database schema was designed through conceptual and logical modeling stages, resulting in the physical implementation in PostgreSQL.
 
-*   **Conceptual Model:** [`/models/PostgreSQL_models/Conceptual_Model.png`](./models/PostgreSQL_models/Conceptual_Model.png)
-*   **Relational (Logical) Model:** [`/models/PostgreSQL_models/Relational_Model_Image.png`](./models/PostgreSQL_models/Relational_Model_Image.png)
-*   **Physical Model (SQL DDL):** [`/models/Physical_model.sql`](./models/Physical_model.sql)
-*   **pgAdmin ERD File:** [`/models/PostgreSQL_models/project.pgerd`](./models/PostgreSQL_models/project.pgerd)
+- **Conceptual Model:** [`/models/PostgreSQL_models/Conceptual_Model.png`](./models/PostgreSQL_models/Conceptual_Model.png)
+- **Relational (Logical) Model:** [`/models/PostgreSQL_models/Relational_Model_Image.png`](./models/PostgreSQL_models/Relational_Model_Image.png)
+- **Physical Model (SQL DDL):** [`/models/Physical_model.sql`](./models/Physical_model.sql)
+- **pgAdmin ERD File:** [`/models/PostgreSQL_models/project.pgerd`](./models/PostgreSQL_models/project.pgerd)
 
 The main tables include:
-*   `Country`: Stores country names and ISO codes.
-*   `Agricultural_Product`: Stores agricultural product names and types (Vegetal/Animal).
-*   `Food_Security_Indicator`: Stores food security indicator names and units.
-*   `Farm_Size_Range`: Defines farm size brackets (lower/upper limits).
-*   `Agricultural_Census`: Links country and year for specific census events.
-*   `Rural_Property_Distribution`: Stores the number of properties and area per size range for a given census (Fact Table).
-*   `Agricultural_Production`: Stores production volume/area/animal count per product, country, and year (Fact Table).
-*   `Food_Security_Measurement`: Stores the value of a specific indicator for a country and year (Fact Table).
+
+- `Country`: Stores country names and ISO codes.
+- `Agricultural_Product`: Stores agricultural product names and types (Vegetal/Animal).
+- `Food_Security_Indicator`: Stores food security indicator names and units.
+- `Farm_Size_Range`: Defines farm size brackets (lower/upper limits).
+- `Agricultural_Census`: Links country and year for specific census events.
+- `Rural_Property_Distribution`: Stores the number of properties and area per size range for a given census (Fact Table).
+- `Agricultural_Production`: Stores production volume/area/animal count per product, country, and year (Fact Table).
+- `Food_Security_Measurement`: Stores the value of a specific indicator for a country and year (Fact Table).
 
 Foreign key relationships link the fact tables to the dimension tables.
 
 ## Technology Stack
 
-*   **Database:** PostgreSQL (tested with version 14+)
-*   **Language:** Python 3.x
-*   **Libraries:**
-    *   `psycopg2-binary`: PostgreSQL adapter for Python.
-    *   `pandas`: Data manipulation and analysis (used in preprocessing and query result display).
-    *   `jupyterlab` / `notebook`: For running the `.ipynb` files.
-*   **Tools:** pgAdmin 4 (for database management and ERD generation)
+- **Database:** PostgreSQL (tested with version 14+)
+- **Language:** Python 3.x
+- **Libraries:**
+  - `psycopg2-binary`: PostgreSQL adapter for Python.
+  - `pandas`: Data manipulation and analysis (used in preprocessing and query result display).
+  - `jupyterlab` / `notebook`: For running the `.ipynb` files.
+- **Tools:** pgAdmin 4 (for database management and ERD generation)
 
 ## Project Structure
+
 ```bash
 Postgres-Database-Project-FoodSecurity/
 │
@@ -157,13 +165,13 @@ Postgres-Database-Project-FoodSecurity/
 3.  **pip:** Python package installer.
 4.  **Required Python Libraries:** Install necessary libraries:
     ```bash
-    pip install psycopg2-binary pandas jupyterlab "ipykernel>=6"
+    pip install -r requirements.txt
     ```
-    *(Note: `ipykernel` needed for Jupyter)*
+    _(Note: `ipykernel` needed for Jupyter)_
 5.  **Clone Repository:** Clone this repository to your local machine.
     ```bash
-    git clone <repository-url>
-    cd Postgres-Database-Project-FoodSecurity
+    git clone https://github.com/Matheus-F-Scatolin/MC536-Database-Project-FoodSecurity.git
+    cd MC536-Database-Project-FoodSecurity
     ```
 6.  **CSV Files:** Ensure the CSV files are present in the `/preprocessed_datasets` directory.
 
@@ -197,10 +205,10 @@ Postgres-Database-Project-FoodSecurity/
     ```
 2.  **Open Notebook:** Open the [`database_creation_and_queries.ipynb`](./database_creation_and_queries.ipynb) notebook in Jupyter.
 3.  **Execute Cells:** Run the cells in the notebook sequentially.
-    *   The notebook will first connect to the database.
-    *   It will then execute the SQL DDL script to create the tables and constraints (using `IF NOT EXISTS` to be idempotent).
-    *   Next, it will read data from the CSV files in the `/preprocessed_datasets` directory and load it into the corresponding database tables. Progress messages will be printed.
-    *   Finally, it will execute the 5 predefined analytical SQL queries and display their results within the notebook (using pandas DataFrames).
+    - The notebook will first connect to the database.
+    - It will then execute the SQL DDL script to create the tables and constraints (using `IF NOT EXISTS` to be idempotent).
+    - Next, it will read data from the CSV files in the `/preprocessed_datasets` directory and load it into the corresponding database tables. Progress messages will be printed.
+    - Finally, it will execute the 5 predefined analytical SQL queries and display their results within the notebook (using pandas DataFrames).
 
 ## Data Preprocessing
 
@@ -222,13 +230,13 @@ The SQL code for each query is documented within the notebook.
 
 The output/results generated by executing the 5 analytical SQL queries in the main notebook are saved as CSV files in the `/results` directory for easy inspection:
 
-*   [`query_1_result.csv`](./results/PostgreSQL_results/query_1_result.csv)
-*   [`query_2_result.csv`](./results/PostgreSQL_results/query_2_result.csv)
-*   [`query_3_result.csv`](./results/PostgreSQL_results/query_3_result.csv)
-*   [`query_4_result.csv`](./results/PostgreSQL_results/query_4_result.csv)
-*   [`query_5_result.csv`](./results/PostgreSQL_results/query_5_result.csv)
+- [`query_1_result.csv`](./results/PostgreSQL_results/query_1_result.csv)
+- [`query_2_result.csv`](./results/PostgreSQL_results/query_2_result.csv)
+- [`query_3_result.csv`](./results/PostgreSQL_results/query_3_result.csv)
+- [`query_4_result.csv`](./results/PostgreSQL_results/query_4_result.csv)
+- [`query_5_result.csv`](./results/PostgreSQL_results/query_5_result.csv)
 
 ## Acknowledgements
 
-*   Data provided by [FAOSTAT](https://www.fao.org/faostat/en/#home).
-*   This project was developed as part of the MC536 course at unicamp.
+- Data provided by [FAOSTAT](https://www.fao.org/faostat/en/#home).
+- This project was developed as part of the MC536 course at unicamp.
